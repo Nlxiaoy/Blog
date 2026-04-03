@@ -30,9 +30,9 @@ redis:
 minio:
   endpoint: 123.207.71.97:9000
   access_key: admin
-  secret_key: admin123456
+  secret_key: 19981206Xzz
   use_ssl: false
-  bucket: nimbus-files
+  bucket: bolg-file
   region: ""
 
 captcha:
@@ -43,11 +43,11 @@ captcha:
   dot_count: 80
 
 smtp:
-  host: smtp.qq.com
+  host: smtp.163.com
   port: 465
-  username: Nimbus Blog
-  password: xxxxxxxxxxxxxxxx
-  from: 1234567890@qq.com
+  username: 猪猪窝杂谈
+  password: DNcyMUZ6WhWPsyXv
+  from: nlxiaoys@163.com
 
 jwt:
   access_secret: FA8edP7T73-9IUGPTrPn407XAUC0Dsx99a4EQFezQR4

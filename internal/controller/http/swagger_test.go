@@ -5,6 +5,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	_ "server/docs" // register swagger spec for /swagger/doc.json
+
 	"github.com/gofiber/contrib/v3/swaggo"
 	"github.com/gofiber/fiber/v3"
 )
