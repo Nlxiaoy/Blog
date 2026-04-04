@@ -24,7 +24,11 @@ func NewRouter(app *fiber.App, cfg *config.Config, l logger.Interface, auth usec
 	app.Use(middleware.Recovery(l))
 	// 跨域请求
 	app.Use(cors.New(cors.Config{
-		AllowOrigins:     []string{"http://localhost:3000"},
+		AllowOrigins: []string{
+			"http://localhost:3000",
+			"https://www.jujuwo.tech",
+			"https://jujuwo.tech",
+		},
 		AllowCredentials: true,
 		AllowHeaders:     []string{"Content-Type", "Authorization"},
 	}))
