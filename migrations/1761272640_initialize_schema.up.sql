@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS admins (
 -- PostgreSQL 的 crypt('12345678', gen_salt('bf')) 在 MySQL 没有同等内置 bcrypt。
 -- 这里用 SHA2 示例（生产建议：由应用层生成 bcrypt/argon2 后再写入 password_hash）。
 INSERT INTO admins (username, password_hash, nickname, specialization, must_reset_password)
-VALUES ('nimbus-admin', SHA2('12345678', 256), 'admin', '全栈工程师', 1)
+VALUES ('1', SHA2('x', 256), 'x', '全栈工程师', 1)
 ON DUPLICATE KEY UPDATE username = username;
 
 -- Admin recovery codes
